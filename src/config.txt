@@ -1,0 +1,4 @@
+username:USERNAME
+password:PASSWORD
+apikey1:1APIKEY2
+apikey2:1APISECRET2

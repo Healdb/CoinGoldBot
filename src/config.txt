@@ -2,3 +2,5 @@ username:USERNAME
 password:PASSWORD
 apikey1:1APIKEY2
 apikey2:1APISECRET2
+redditAPI1:RedditAPP
+redditAPI2:REdditAPPSecret

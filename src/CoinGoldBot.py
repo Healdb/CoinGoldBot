@@ -14,7 +14,7 @@ import urllib2
 import helpers
 import fileHelpers
 
-username,password,apikey1,apikey2 = helpers.getSensitive()
+username,password,apikey1,apikey2,trash1,trash2 = helpers.getSensitive()
 r = praw.Reddit('Coin Gold Bot')
 r.login(username,password)
 tip_amount_pattern = re.compile("D?(\d+) ?(?:D|doge)?", re.IGNORECASE)
@@ -87,3 +87,8 @@ while True:
     find_summons()
     responses()
     time.sleep(10)
+
+  
+
+
+

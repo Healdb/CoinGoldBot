@@ -64,8 +64,7 @@ def responses():
             print 'Buying gold...'
             recieverDict = fileHelpers.readDict("links.txt")
             reciever = recieverDict[str(currentAddress)]
-            check = "success"
-            #check = buyGold.buy_gold(reciever, key)
+            check = buyGold.buy_gold(reciever, key)
             if check == "success":
                 pricesDict = fileHelpers.readDict('userPrice.txt')
                 print pricesDict                               

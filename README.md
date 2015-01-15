@@ -9,7 +9,7 @@ or
 
 +/u/coingoldbot gild LTC
 
-Prequisites: <a href="https://pypi.python.org/pypi/praw">PRAW</a>, <a href="https://pypi.python.org/pypi/Cryptsy">Cryptsy</a>
+<H1>Prequisites:</H1> <a href="https://pypi.python.org/pypi/praw">PRAW</a>, <a href="https://pypi.python.org/pypi/Cryptsy">Cryptsy</a>
 
 <H1>Steps to run:</H1>
 

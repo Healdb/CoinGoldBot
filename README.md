@@ -4,7 +4,9 @@ Currently supports Bitcoin, Litecoin, Dogecoin, and Reddcoin.
 
 <H1>Example usage:</H1>
 +/u/coingoldbot healdb BTC
+
 or
+
 +/u/coingoldbot gild LTC
 
 Prequisites: <a href="https://pypi.python.org/pypi/praw">PRAW</a>, <a href="https://pypi.python.org/pypi/Cryptsy">Cryptsy</a>

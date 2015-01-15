@@ -2,7 +2,7 @@ import requests
 import requests.auth
 import re
 def buy_gold(user, key):
-  try:
+	try:
 		re1='(t)'	# Any Single Word Character (Not Whitespace) 1
 		re2='(\\d+)'	# Integer Number 1
 		re3='(_)'	# Any Single Character 1

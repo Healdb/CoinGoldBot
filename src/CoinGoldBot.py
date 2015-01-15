@@ -51,7 +51,7 @@ def responses():
     global key
     print 'Done. Starting second part' 
     time.sleep(5)
-    f =open('address.txt')
+    f =open('address.txt', 'ab+')
     lines=f.readlines()
     for line in lines:
         try:

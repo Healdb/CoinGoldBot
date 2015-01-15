@@ -1,6 +1,6 @@
 username:USERNAME
 password:PASSWORD
-apikey:1APIKEY2
-apikeysecret:1APISECRET2
+Cryptsyapikey:1APIKEY2
+Cryptsyapikeysecret:1APISECRET2
 redditAPI:RedditAPP
 redditAPIsecret:REdditAPPSecret

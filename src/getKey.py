@@ -16,7 +16,7 @@ def get_key():
         decoded = json.dumps(json_input)
         decoded = json.loads(decoded)
         price = decoded['access_token']
-        obj3 = open('access_key.txt', 'w')
+        obj3 = open('accessKey.txt', 'w')
         obj3.write(price)
         obj3.close()
         print 'Done'

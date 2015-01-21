@@ -80,7 +80,7 @@ def responses():
             else:
                 print 'ERROR, problem with buying gold'
 while True:
-    keyFile = open('access_key.txt', 'r')
+    keyFile = open('accessKey.txt', 'r')
     key = keyFile.read()
     print "Start"
     find_summons()

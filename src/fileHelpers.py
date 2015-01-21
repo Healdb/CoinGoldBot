@@ -1,13 +1,6 @@
 #coding: utf-8
-import time
-import requests
-import re
 import os
 import csv
-import requests
-import requests.auth
-import json
-import urllib2
 
 def delete_line(bad_words, fn):
     with open(fn+'.txt') as oldfile, open(fn + '2.txt', 'w+') as newfile:

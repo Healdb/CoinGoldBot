@@ -3,7 +3,9 @@ import requests.auth
 import time
 import json
 import helpers
+
 username,password,trash1,trash2,reddit1,reddit2 = helpers.getSensitive()
+
 def get_key():
     print "grabbing key..."
     try:

@@ -20,9 +20,11 @@ def getSensitive():
     trash, password = lines[1].split(":")
     trash, apikey1 = lines[2].split(":")
     trash, apikey2 = lines[3].split(":")
-    return username.rstrip(), password.rstrip(), apikey1.rstrip(),apikey2.rstrip()
+    trash, reddapikey1 = lines[4].split(":")
+    trash, reddapikey2 = lines[5].split(":")
+    return username.rstrip(), password.rstrip(), apikey1.rstrip(),apikey2.rstrip(),reddapikey1.rstrip(),reddapikey2.rstrip()
 
-username,password,apikey1, apikey2 = getSensitive()
+username,password,apikey1, apikey2, trash1, trash2 = getSensitive()
 r = praw.Reddit('Coin Gold Bot')
 r.login(username,password)
 exchange = Api(apikey1, apikey2)

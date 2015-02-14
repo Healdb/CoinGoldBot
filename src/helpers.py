@@ -29,38 +29,6 @@ r = praw.Reddit('Coin Gold Bot')
 r.login(username,password)
 exchange = Api(apikey1, apikey2)
 
-def getPrice(com_id,com_permlink):
-    submission = r.get_submission(url=com_permlink + com_id)
-    submission = submission.comments
-    for comment in submission:
-        com_id =  comment.id
-        oldstr = comment.permalink
-        newstr = oldstr.replace(com_id, "")
-        temp_id = comment.parent_id
-        link_id = temp_id[3:]
-        com_link = newstr + link_id
-        submission = r.get_submission(url=com_link)
-        submission = submission.comments
-        for comment in submission:
-            text = comment.body
-            com_id =  comment.id
-            oldstr = comment.permalink
-            newstr = oldstr.replace(com_id, "")
-            temp_id = comment.parent_id
-            link_id = temp_id[3:]
-            com_link = newstr + link_id
-            submission = r.get_submission(url=com_link)
-            submission = submission.comments
-            for comment in submission:
-                text = comment.body
-                link = comment.permalink
-                re1='.*?'	# Non-greedy match on filler
-                re2='(\\d+)'	# Integer Number 1
-                rg = re.compile(re1+re2,re.IGNORECASE|re.DOTALL)
-                m = rg.search(text)
-                if m:
-                    int1=m.group(1)
-                    return int1, link
 def user_to_full(username):
     try:
         response = urllib2.urlopen('http://www.reddit.com/user/' + username + '/about.json')
